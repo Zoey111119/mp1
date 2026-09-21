@@ -4,10 +4,186 @@
         <meta charset="utf-8" />
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>MP1</title>
+        <title>Harry Potter</title>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     </head>
-    <body>
-        <h1>Hello World! Welcome to MP1!</h1>
-        <img src="assets/image.jpg">
-    </body>
+    <body >
+        <nav id ="navbar" class="navigation_bar">
+            <div class="logo">
+                <h1>Harry Potter</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="navi-item">Home</a></li>
+                <li><a href="#video" class="navi-item">Video</a></li>
+                <li><a href="#characters" class="navi-item">Characters</a></li>
+                <li><a href="#stories" class="navi-item">Stories</a></li>
+                <li><a href="#houses" class="navi-item">House</a></li>
+            </ul>
+        </nav>
+   
+    <!--hero-->
+    <section id="home" class="hero">
+        <div class="centered-box">
+            <h1 class="hero-title">Welcome to Hogwarts</h1>
+            <h2 class="hero-intro">An orphaned boy discovers he is a wizard on his eleventh birthday, attends Hogwarts, and eventually defeats the Dark Lord Voldemort alongside his friends through the power of courage, friendship, and love.</h2>
+        </div>
+    </section>
+    <!--video-->
+    <section id="video" class="section-video">
+        <div class="video-container">
+            <h2 class="video-name">Harry Potter Intro</h2>
+            <video class="video-box" controls>
+                <source src="assets/harrypotter-intro.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+    <!--About-3-column-->
+    <section id="characters" class="section-characters">
+        <div class="chara-container">
+            <h2 class="chara-title">Main Characters</h2>
+            <div class="column-3">
+                <div class="card">
+                     <i class="fa-solid fa-bolt card-icon"></i>
+                     <h3>Harry Potter</h3>
+                     <p>Boy Who Lived, marked by destiny and known for his courage.</p>
+                </div>
+                <div class="card">
+                     <i class="fa-solid fa-book-open card-icon"></i>
+                     <h3>Hermione Granger</h3>
+                     <p>The brightest witch of her age, logical, brilliant, and fiercely loyal.</p>
+                </div>
+                <div class="card">
+                     <i class="fa-solid fa-chess-knight card-icon"></i>
+                     <h3>Ron Weasley</h3>
+                     <p>A loyal friend with a brave heart and unmatched skill at Wizard's Chess.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Carousel-->
+    <section id="stories" class="section-stories">
+        <h2 class="stories-title">The 7 Books</h2>
+        <div class="wrapper">
+            <button class="carousel-btn prev-btn" id="prevBtn"><i class="fa-solid fa-chevron-left"></i></button>
+            <div class="stories-container">
+                <div id="book1" class="carousel-slide">
+                    <div class="card-content">
+                        <span class="book-number">Book 1</span>
+                        <h3>Harry Potter and the Philosopher's Stone</h3>
+                        <p>Harry discovers his magical heritage on his 11th birthday and attends Hogwarts, where he uncovers the secret of the Sorcerer's Stone.</p>
+                    </div>
+                </div>
+                <div id="book2" class="carousel-slide">
+                    <div class="card-content">
+                        <span class="book-number">Book 2</span>
+                        <h3>Harry Potter and the Chamber of Secrets</h3>
+                        <p>Mysterious attacks paralyze Hogwarts students, leading Harry to discover a dark secret hidden deep within the Chamber of Secrets.</p>
+                    </div>
+                </div>
+                <div id="book3" class="carousel-slide">
+                    <div class="card-content">
+                        <span class="book-number">Book 3</span>
+                        <h3>Harry Potter and the Prisoner of Azkaban</h3>
+                        <p>Convicted murderer Sirius Black escapes Azkaban. Harry uncovers the truth about his parents' past and his connection to Sirius.</p>
+                    </div>
+                </div>
+                <div id="book4" class="carousel-slide">
+                        <div class="card-content">
+                        <span class="book-number">Book 4</span>
+                        <h3>Harry Potter and the Goblet of Fire</h3>
+                        <p>Harry is unexpectedly entered into the dangerous Triwizard Tournament, culminating in the harrowing return of Lord Voldemort.</p>
+                    </div>
+                </div>
+                <div id="book5" class="carousel-slide">
+                    <div class="card-content">
+                        <span class="book-number">Book 5</span>
+                        <h3>Harry Potter and the Order of the Phoenix</h3>
+                        <p>Facing disbelief from the Ministry of Magic, Harry and his friends form Dumbledore's Army to prepare for the coming war.</p>
+                    </div>
+                </div>
+                <div id="book6" class="carousel-slide">
+                    <div class="card-content">
+                        <span class="book-number">Book 6</span>
+                        <h3>Harry Potter and the Half-Blood Prince</h3>
+                        <p>Harry learns about Voldemort's past and the dark secret of Horcruxes while guided by an old textbook belonging to the Half-Blood Prince.</p>
+                    </div>
+                </div>
+                <div id="book7" class="carousel-slide">
+                    <div class="card-content">
+                        <span class="book-number">Book 7</span>
+                        <h3>Harry Potter and the Deathly Hallows</h3>
+                        <p>Harry, Ron, and Hermione hunt for Voldemort's remaining Horcruxes, leading to the ultimate battle at Hogwarts for the wizarding world.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-btn next-btn" id="nextBtn"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+    </section>
+    <!--modals-->
+    <section id="houses" class="section-houses">
+        <div class="houses-container">
+            <h2 class="house-title">Hogwarts Houses</h2>
+            <div class="house-box">
+                <div class="house-card" data-modal="modal-Gryffindor">
+                    <h3>Gryffindor</h3>
+                    <button class="btn-modal">View Details</button>
+                </div>
+                <div class="house-card" data-modal="modal-Slytherin">
+                    <h3>Slytherin</h3>
+                    <button class="btn-modal">View Details</button>
+                </div>
+                <div class="house-card" data-modal="modal-Ravenclaw">
+                    <h3>Ravenclaw</h3>
+                    <button class="btn-modal">View Details</button>
+                </div>
+                <div class="house-card" data-modal="modal-Hufflepuff">
+                    <h3>Hufflepuff</h3>
+                    <button class="btn-modal">View Details</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Modals-->
+    <div id="modal-Gryffindor" class="modal" role="dialog" aria-modal="true">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Gryffindor</h2>
+            <p>Gryffindor values bravery, daring, nerve, and chivalry. Its mascot is the lion, and its colors are scarlet and gold.</p>
+        </div>
+    </div>
+    <div id="modal-Slytherin" class="modal" role="dialog" aria-modal="true">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Slytherin</h2>
+            <p>Slytherin values ambition, leadership, self-preservation, cunning, and resourcefulness. Its mascot is the serpent.</p>
+        </div>
+    </div>
+    <div id="modal-Ravenclaw" class="modal" role="dialog" aria-modal="true">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Ravenclaw</h2>
+            <p>Ravenclaw values intelligence, knowledge, curiosity, creativity, and wit. Its mascot is the eagle.</p>
+        </div>
+    </div>
+     <div id="modal-Hufflepuff" class="modal" role="dialog" aria-modal="true">
+         <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h2>Hufflepuff</h2>
+            <p>Hufflepuff values hard work, patience, justice, and loyalty. Its mascot is the badger.</p>
+        </div>
+    </div>
+    <!--footer-->
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2026 Hogwarts School of Witchcraft and Wizardry</p>
+            <div class="social-icon">
+                <a href="https://github.com/topics/harry-potter" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://x.com/harrypotter" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com/harrypotter" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script defer src="js/main.js"></script>
+ </body>
 </html>
