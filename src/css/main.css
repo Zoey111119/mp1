@@ -346,6 +346,12 @@ a {
   width: 60%;
   position: relative;
 }
+.modal .modal-content h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 25px;
+  color: #000000;
+}
 .modal .modal-content p {
   font-size: 15px;
   color: #000000;

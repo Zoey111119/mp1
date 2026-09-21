@@ -357,11 +357,18 @@ a{
         width: 60%;
         position: relative;
 
+        h2{
+            text-align: center;
+            margin-bottom: 15px;
+            font-size: 25px;
+            color: #000000;
+        }
+
         p{
-        font-size: 15px;
-        color: #000000;
-        line-height: 1.6;
-        align-content: center;
+            font-size: 15px;
+            color: #000000;
+            line-height: 1.6;
+            align-content: center;
         }
 
         .close-button{
