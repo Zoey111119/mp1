@@ -1,2 +1,14 @@
-example_chatgpt_log_link1
-example_bing_chat_log_link2
+    function highlightNavOnScroll(){
+        const navHeight = navBar ? navBar.offsetHeight : 0;
+        let currentSectionId = '';
+        const isAtBottom = (window.innerHeight + window.scrollY) >= document.documentElement.scrollHeight - 5;
+        if (isAtBottom && sections.length > 0) {
+            currentSectionId = sections[sections.length - 1].getAttribute('id');
+        } else {
+            sections.forEach(section => {
+                const rect = section.getBoundingClientRect();
+                if (rect.top <= navHeight + 100 && rect.bottom > navHeight) {
+                    currentSectionId = section.getAttribute('id');
+                }
+            });
+        }
